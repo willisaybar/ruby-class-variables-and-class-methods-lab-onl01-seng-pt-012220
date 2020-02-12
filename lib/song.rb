@@ -35,7 +35,7 @@ class Song
   #the above is together, initialize and puts no repeats
 
   def initialize(name, artist, genre)
-    @@artists_count 
+    @@artists_count
   end
 
 
