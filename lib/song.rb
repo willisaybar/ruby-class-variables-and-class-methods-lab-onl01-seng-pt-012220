@@ -40,11 +40,13 @@ class Song
 
   #the above is together
 
+  def name(artist)
+    @name = artist
+  end
+
   def name
     @name
   end
-
-
 
 
 end
