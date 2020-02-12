@@ -9,13 +9,13 @@ class Song
   @@artists_count = {}
 
 
-  def name=(artist)
-    @name = artist
-  end
-
-  def name
-    @name
-  end
+  # def name=(artist)
+  #   @name = artist
+  # end
+  #
+  # def name
+  #   @name
+  # end
 
   def initialize
     @@count += 1
@@ -38,7 +38,7 @@ class Song
   #the above is together, initialize and puts no repeats
 
   def initialize(name)
-    @@artists
+    @@artists = name 
   end
 
   #the above is together, initialize and puts no repeats
