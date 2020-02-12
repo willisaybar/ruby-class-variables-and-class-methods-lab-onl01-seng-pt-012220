@@ -38,6 +38,12 @@ class Song
     @@artists_count
   end
 
+  #the above is together
+
+  def name
+    @name
+  end
+
 
 
 
