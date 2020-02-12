@@ -16,6 +16,8 @@ class Song
     @@count
   end
 
+  #the above is together, initialize and puts
+
   def initialize
     @@genres += 1
   end
@@ -24,13 +26,13 @@ class Song
     @@genres
   end
 
-  def self.count
-    @@genres
-  end
+  #the above is together, initialize and puts no repeats
 
-  def initialize
+  def initialize(name)
     @@artists
   end
+
+  #the above is together, initialize and puts no repeats
 
   def initialize(name, artist, genre)
     @@artists_count 
