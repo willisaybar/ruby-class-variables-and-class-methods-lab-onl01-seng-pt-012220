@@ -8,6 +8,15 @@ class Song
   @@genere_count = {}
   @@artists_count = {}
 
+
+  def name=(artist)
+    @name = artist
+  end
+
+  def name
+    @name
+  end
+
   def initialize
     @@count += 1
   end
@@ -38,15 +47,7 @@ class Song
     @@artists_count
   end
 
-  #the above is together
 
-  def name(artist)
-    @name = artist
-  end
-
-  def name
-    @name
-  end
 
 
 end
