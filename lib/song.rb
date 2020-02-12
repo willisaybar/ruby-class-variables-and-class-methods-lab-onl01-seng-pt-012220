@@ -1,25 +1,15 @@
 class Song
-
   @@count = 0
-  @@genres = []
-  @@artists = []
-  @@artists_count = {}
 
   def self.count
     @@count
   end
 
-  #the above is together, initialize and puts
+  @@genres = []
 
-  def initialize
+  def self.genres
     @@genres.uniq
   end
-
-  def self.genre_count
-    @@genres.inject(Hash.new(0)) { |total, i| total[i] += 1 ;total}
-  end
-
-  #the above is together, initialize and puts no repeats
 
   def self.genre_count
     genre_count = {}
@@ -33,19 +23,23 @@ class Song
     genre_count
   end
 
-  #the above is together, initialize and puts no repeats
+  @@artists = []
+
+  def self.artist_count
+    @@artists.inject(Hash.new(0)) { |total, i| total[i] += 1 ;total}
+  end
+
+  def self.artists
+    @@artists.uniq
+  end
 
   def initialize(name, artist, genre)
     @name = name
-    @@artists_count << artist
-    @@genre = genre
-    @@generes << genre
+    @artist = artist
+    @@artists << artist
+    @genre = genre
+    @@genres << genre
     @@count += 1
   end
-    attr_accessor :name, :artist, :genre
-  end
-
-
-
-
+  attr_accessor :name, :artist, :genre
 end
