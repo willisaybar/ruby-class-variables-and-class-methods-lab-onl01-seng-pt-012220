@@ -17,7 +17,11 @@ class Song
   end
 
   def initialize
-    @@genres #control for duplicates
+    @@genres += 1
+  end
+
+  def self.count
+    @@genres
   end
 
   def self.count
